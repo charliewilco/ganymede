@@ -4,7 +4,7 @@
   "description": "A color scheme for Hyper/Hyperterm, Atom & Neovim",
   "main": "dist/ganymede.js",
   "scripts": {
-    "build": "babel index.js >> dist/ganymede.js",
+    "build": "babel src -d dist",
     "prepublish": "npm run build",
     "start": "onchange 'index.js' -- npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
