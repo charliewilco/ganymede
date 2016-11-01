@@ -18,10 +18,10 @@ npm i -S ganymede
 <h3 align='center'>
   <img alt='Vim Icon' src='assets/vim.png' />
   <br />
-  Vim
+  <a href='https://github.com/charlespeters/ganymede.vim'>Vim</a>
 </h3>
 
-This was designed using Neovim Add `charlespeters/vim-ganymede` to whatever plugin system you're using (Pathogen, Vundle, etc). In your `.vimrc` add:
+This was designed using Neovim, but totally works in normal people Vim (like 7.4+). Add `charlespeters/vim-ganymede` to whatever plugin system you're using (Pathogen, Vundle, etc). In your `.vimrc` add:
 
 ```vim
 set t_Co=256
@@ -35,7 +35,7 @@ let g:airline_theme='ganymede'
 <h3 align='center'>
   <img alt='Hyper Icon' src='assets/hyper.png' />
   <br />
-  Hyper
+  <a href='https://github.com/charlespeters/hyperganymede'>Hyper</a>
 </h3>
 
 
