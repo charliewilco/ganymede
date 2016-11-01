@@ -16,7 +16,7 @@ npm i -S ganymede
 ```
 
 <h3 align='center'>
-  <img alt='Vim Icon' src='assets/vim.png />
+  <img alt='Vim Icon' src='assets/vim.png' />
   <br />
   Vim
 </h3>
@@ -33,7 +33,7 @@ let g:airline_theme='ganymede'
 ![Screenshot of Vim using Ganymede](assets/screenshot-vim.png)
 
 <h3 align='center'>
-  <img alt='Hyper Icon' src='assets/hyper.png />
+  <img alt='Hyper Icon' src='assets/hyper.png' />
   <br />
   Hyper
 </h3>
