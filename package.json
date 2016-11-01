@@ -1,6 +1,6 @@
 {
   "name": "ganymede",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "A color scheme for Hyper/Hyperterm, Atom & Neovim",
   "main": "dist/ganymede.js",
   "scripts": {
