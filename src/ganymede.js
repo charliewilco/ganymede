@@ -1,39 +1,22 @@
-// '#1B2B34',
-// '#EB606B',
-// '#7ED4F8',
-// '#E9C062',
-// '#96CBFE',
-// '#BB80B3',
-// '#5FB3B3',
-// '#D0D0D0',
-// '#808080',
-// '#F25A55',
-// '#7ED4F8',
-// '#FFBA00',
-// '#3c71bf',
-// '#be67e7',
-// '#6699CC',
-// '#FFFFFF'
-
 const Ganymede = {
   colors: {
-    cyan: '#5FB3B3',
-    blue: '#7ED4F8',
-    purple: '#7450B6',
-    green: '#DBD36E',
+    cyan: '#00B7ED',
+    blue: '#00B7ED',
+    yellow: '#FFBA00',
+    green: '#F1D677',
+    purple: '#F25A55',
     red: '#F25A55',
-    orange: '#DB8958',
-    pink: '#FFB899', // Formerly lightOrange
-    yellow: '#FFBA00'
+    orange: '#F25A55',
+    pink: '#F5837F'
   },
 
   grays: {
     gray0: '#022538',
     gray1: '#093750',
-    gray2: '#3881A8',
-    gray3: '#1c7db1',
-    gray4: '#a2d9f5',
-    gray5: '#C5D4DD',
+    gray2: '#055682',
+    gray3: '#1C7DB1',
+    gray4: '#A2D9F5',
+    gray5: '#DCEBF5',
     gray6: '#E6EEF3'
   }
 }
