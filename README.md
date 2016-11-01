@@ -15,10 +15,11 @@ A color scheme for Hyper/Hyperterm, Vim/NeoVim & Atom (maybe, eventually, probab
 npm i -S ganymede
 ```
 
-<div align='center'>
-![Vim Icon](assets/vim.png)
-### Vim
-</div>
+<h3 align='center'>
+  ![Vim Icon](assets/vim.png)
+  <br />
+  Vim
+</h3>
 
 This was designed using Neovim Add `charlespeters/vim-ganymede` to whatever plugin system you're using (Pathogen, Vundle, etc). In your `.vimrc` add:
 
@@ -31,10 +32,11 @@ let g:airline_theme='ganymede'
 
 ![Screenshot of Vim using Ganymede](assets/screenshot-vim.png)
 
-<div align='center'>
-![Hyper Icon](assets/hyper.png)
-### Hyper
-</div>
+<h3 align='center'>
+  ![Hyper Icon](assets/hyper.png)
+  <br />
+  Hyper
+</h3>
 
 
 Add `'hyperganymede'` under plugins in your configuration file (preferably toward the end of the list). An example:
