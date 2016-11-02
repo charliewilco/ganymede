@@ -59,6 +59,22 @@ And in action:
 
 ![Screenshot of Hyper using Ganymede](assets/screenshot-hyper.png)
 
+<h3 align='center'>
+  <img alt='Atom Icon' src='assets/atom.png' />
+  <br />
+  <a href='https://github.com/charlespeters/ganymede-atom-syntax'>Atom</a>
+</h3>
+
+There's a syntax port of Ganymede for Atom. To install, run this command below or search for Ganymede.
+
+```
+apm install ganymede-atom-syntax
+```
+
+![Screenshot of Atom using Ganymede](assets/screenshot-atom.png)
+
+The screenshot above uses Atom Dark UI theme and SF Mono.
+
 ---
 
 ## Acknowledgement
