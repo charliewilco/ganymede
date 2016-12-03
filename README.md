@@ -75,6 +75,15 @@ apm install ganymede-atom-syntax
 
 The screenshot above uses Atom Dark UI theme and SF Mono.
 
+<h3 align='center'>
+  <img alt='iTerm Icon' src='assets/iterm.png' />
+  <br />
+  <a href='https://github.com/charlespeters/ganymede-iterm'>iTerm</a>
+</h3>
+
+Download [`Ganymede.itermcolors`](https://raw.githubusercontent.com/charlespeters/ganymede-iterm/master/Ganymede.itermcolors) and drag into onto iTerm in your Dock or In iTerm, open your preferences
+navigate to _"Profiles" > "Colors" > "Color Presets" > "Import"_ and select the copy of `Ganymede.itermcolors` you downloaded.
+
 ---
 
 ## Acknowledgement
