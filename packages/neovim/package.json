@@ -1,0 +1,48 @@
+{
+  "name": "vim-ganymede",
+  "version": "1.0.0",
+  "description": "Vim port of Ganymede",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "previm": "mkdirp autoload/airline/themes colors",
+    "vim": "npm-run-all vim:*",
+    "vim:theme": "babel-node src/index.js >> colors/ganymede.vim",
+    "vim:airline": "babel-node src/airline.js >> autoload/airline/themes/ganymede.vim",
+    "build": "npm run vim",
+    "start": "watch 'npm run build' src",
+    "prebuild": "npm run clean",
+    "clean": "rimraf ./autoload ./colors"
+  },
+  "keywords": [],
+  "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^3.1.1",
+    "rimraf": "^2.5.4",
+    "watch": "^1.0.1"
+  },
+  "dependencies": {
+    "ganymede": "^1.0.0"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlespeters/ganymede.vim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charlespeters/ganymede.vim/issues"
+  },
+  "homepage": "https://github.com/charlespeters/ganymede.vim#readme"
+}
