@@ -1,6 +1,6 @@
 {
-  "name": "ganymede-vscode",
-  "version": "1.0.0",
+  "name": "ganymede-vscode-theme",
+  "version": "2.0.0",
   "scripts": {
     "prestart": "tsc index.ts",
     "start": "node index.js"
@@ -24,6 +24,6 @@
   "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
   "license": "MIT",
   "dependencies": {
-    "ganymede": "^1.1.0"
+    "ganymede": "^2.0.0"
   }
 }

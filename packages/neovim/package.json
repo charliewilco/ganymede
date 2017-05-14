@@ -1,6 +1,6 @@
 {
   "name": "vim-ganymede",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Vim port of Ganymede",
   "main": "src/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "watch": "^1.0.1"
   },
   "dependencies": {
-    "ganymede": "^1.0.0"
+    "ganymede": "^2.0.0"
   },
   "babel": {
     "presets": [
