@@ -1,10 +1,11 @@
 {
-  "name": "vscode",
+  "name": "ganymede-vscode",
   "version": "1.0.0",
   "scripts": {
     "prestart": "tsc index.ts",
     "start": "node index.js"
   },
+  "repository": "charlespeters/ganymede",
   "contributes": {
     "themes": [
       {

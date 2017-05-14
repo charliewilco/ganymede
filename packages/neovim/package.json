@@ -37,12 +37,5 @@
       "transform-object-rest-spread"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charlespeters/ganymede.vim.git"
-  },
-  "bugs": {
-    "url": "https://github.com/charlespeters/ganymede.vim/issues"
-  },
-  "homepage": "https://github.com/charlespeters/ganymede.vim#readme"
+  "repository": "charlespeters/ganymede"
 }

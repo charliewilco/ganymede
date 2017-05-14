@@ -9,17 +9,10 @@
     "start": "onchange 'index.js' -- npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charlespeters/ganymede.git"
-  },
+  "repository": "charlespeters/ganymede",
   "keywords": [],
   "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/charlespeters/ganymede/issues"
-  },
-  "homepage": "https://github.com/charlespeters/ganymede#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",

@@ -1,0 +1,15 @@
+{
+  "name": "ganymede-atom-syntax",
+  "theme": "syntax",
+  "version": "1.0.4",
+  "description": "An Atom Editor port of Ganymede",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "charlespeters/ganymede",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
