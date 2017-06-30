@@ -22,7 +22,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-preset-latest": "^6.16.0",
     "mkdirp": "^0.5.1",
-    "npm-run-all": "^3.1.1",
+    "npm-run-all": "^4.0.2",
     "rimraf": "^2.5.4",
     "watch": "^1.0.1"
   },

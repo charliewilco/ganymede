@@ -6,7 +6,7 @@
     "build": "node index.js >> Ganymede.itermcolors"
   },
   "devDependencies": {
-    "onchange": "3.2.0"
+    "onchange": "3.2.1"
   },
   "dependencies": {
     "ganymede": "^2.0.0",
