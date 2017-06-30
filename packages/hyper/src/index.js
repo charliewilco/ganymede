@@ -1,8 +1,8 @@
 import { uiGroups, ansiGroups } from 'ganymede'
 
-// rgba(9,55,80, 1) = ui.background
+// rgba(9, 55, 80, 1) = ui.background
 
-const AlphaBkg = 'rgba(9, 55, 80, 0.75)'
+const AlphaBkg = 'rgba(9, 55, 80, 0.875)'
 
 exports.onWindow = browserWindow => browserWindow.setVibrancy('dark')
 exports.decorateConfig = (config) => Object.assign({}, config, {
@@ -37,21 +37,22 @@ exports.decorateConfig = (config) => Object.assign({}, config, {
       margin-left: 0 !important;
     }
     .tab_tab {
-      background-color: transparent !import;
+      background-color: transparent !important;
       color: ${uiGroups.gray5};
       border-bottom-width: 2px;
       border-bottom-style: solid;
       border-bottom-color: ${uiGroups.gray1};
     }
+
     .tab_tab.tab_active {
       border-bottom-color: ${uiGroups.userCurrentState} !important;
     }
     .tab_tab.tab_active::before {
       border: none !important;
     }
+
     .tab_text {
       border: none !important;
-      color: ${uiGroups.gray2} !important;
     }
 
     .tabs_title,
