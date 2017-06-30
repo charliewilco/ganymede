@@ -7,9 +7,16 @@
     "syntax",
     "theme"
   ],
-  "repository": "charlespeters/ganymede",
+  "repository": "charlespeters/ganymede-atom-syntax",
   "license": "MIT",
+  "scripts": {
+    "postpublish": "apm publish ganymede-atom-syntax",
+    "prepublish": "push-dir --dir . --branch master --force --remote git@github.com:charlespeters/ganymede-atom-syntax.git"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
   }
 }
