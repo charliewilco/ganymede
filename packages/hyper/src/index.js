@@ -67,7 +67,7 @@ exports.decorateConfig = (config) => Object.assign({}, config, {
     }
 
     .splitpane_divider {
-      background-color: rgba(4, 9, 15, 0.35) !important;
+      background-color: rgba(28, 125, 177, 0.35) !important;
     }
 
     .splitpane_divider_horizontal,
