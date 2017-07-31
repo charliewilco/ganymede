@@ -59,14 +59,30 @@ exports.decorateConfig = (config) => Object.assign({}, config, {
     .tab_textActive {
       color: ${uiGroups.userCurrentState} !important;
     }
+
     .tabs_title,
     .tab_textInner {
       font-size: 14px;
       font-weight: bold;
     }
+
     .splitpane_divider {
-      background: transparent !important;
-      border-color: ${uiGroups.background} !important;
+      background-color: rgba(4, 9, 15, 0.35) !important;
+    }
+
+    .splitpane_divider_horizontal,
+    .splitpane_divider_vertical {
+      border-width: 0 !important;
+    }
+
+    .splitpane_divider_horizontal {
+      height: 2px !important;
+      margin: 0 !important;
+    }
+
+    .splitpane_divider_vertical {
+      width: 2px !important;
+      margin: 0 !important;
     }
   `
 })
