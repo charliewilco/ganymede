@@ -6,4 +6,4 @@ cache:
 install:
   - yarn
 script:
-  - sh scripts/build
+  - ./scripts/build
