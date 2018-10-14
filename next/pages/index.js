@@ -17,10 +17,6 @@ const App = ({ colors, grays }) => (
       </article>
     </main>
     <style jsx>{`
-      :global(html) {
-        font-family: "SF Mono";
-      }
-
       :global(body) {
         height: 100%;
         margin: 0;

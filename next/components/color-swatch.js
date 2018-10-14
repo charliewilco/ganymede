@@ -9,11 +9,11 @@ export default class extends React.Component {
     const { visible } = this.state;
     const { color } = this.props;
     return (
-      <div className="Cont" onMouseEnter={this.onHover} onMouseLeave={this.onHover}>
-        <div className="Orb" />
-        {visible && <span className="Tag">{color}</span>}
+      <figure onMouseEnter={this.onHover} onMouseLeave={this.onHover}>
+        <div />
+        {visible && <figcaption>{color}</figcaption>}
         <style jsx>{`
-          .Orb {
+          div {
             background-color: ${color};
             height: 20px;
             width: 20px;
@@ -22,7 +22,15 @@ export default class extends React.Component {
             border: 1px solid ${color === "#022538" ? "#E6EEF3" : "transparent"};
           }
 
-          .Tag {
+          figure {
+            text-align: center;
+            max-width: 24px;
+            margin: 8px 0;
+            padding: 0;
+            position: relative;
+          }
+
+          figcaption {
             position: absolute;
             right: -84px;
             top: 0;
@@ -34,16 +42,8 @@ export default class extends React.Component {
             font-size: 14px;
             z-index: 50;
           }
-
-          .Cont {
-            text-align: center;
-            max-width: 24px;
-            margin: 8px 0;
-            padding: 0;
-            position: relative;
-          }
         `}</style>
-      </div>
+      </figure>
     );
   }
 }
