@@ -1,9 +1,6 @@
-import { uiGroups, syntaxGroups, ansiGroups, versionControlGroups } from 'ganymede'
-import warning from './warning'
+const { uiGroups, syntaxGroups, ansiGroups, versionControlGroups } = require('ganymede')
 
 const sourceString = `
-${warning}
-
 " ==================================================================
 " HIGHLIGHT HELPER
 " ==================================================================

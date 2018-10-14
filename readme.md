@@ -1,4 +1,4 @@
-![Color Palette for Ganymede](assets/ganymede-palette.png)
+![Color Palette for Ganymede](./assets/ganymede-palette.png)
 
 # Ganymede
 
@@ -11,7 +11,7 @@ A color scheme for Hyper/Hyperterm, Vim/NeoVim & Atom (maybe, eventually, probab
 
 ## Usage
 
-```
+```shell
 npm i -S ganymede
 ```
 

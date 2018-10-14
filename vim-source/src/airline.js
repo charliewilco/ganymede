@@ -1,4 +1,5 @@
-import Ganymede, { uiGroups } from 'ganymede'
+const Ganymede, { uiGroups } = require('ganymede')
+
 import warning from './warning'
 
 /**

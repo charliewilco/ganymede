@@ -15,8 +15,8 @@ apm install ganymede-atom-syntax
 
 ## Colors
 
-![Color Palette for Ganymede](assets/ganymede-palette.png)
+![Color Palette for Ganymede](./assets/ganymede-palette.png)
 
 In use
 
-![A screenshot of your theme](assets/screenshot-atom.png)
+![A screenshot of your theme](./assets/screenshot-atom.png)

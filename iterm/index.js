@@ -1,4 +1,4 @@
-const { ansiGroups } = require('ganymede')
+const { ansiGroups } = require('../core')
 const { normal, bright } = ansiGroups
 const hexRgb = require('hex-rgb')
 

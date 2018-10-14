@@ -1,0 +1,25 @@
+{
+  "name": "vim-source",
+  "version": "2.0.4",
+  "description": "Vim port of Ganymede",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "mkdirp ../autoload/airline/themes ../colors",
+    "build": "scripts/build",
+    "start": "watch 'npm run build' src"
+  },
+  "keywords": [],
+  "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.5.4",
+    "watch": "^1.0.1"
+  },
+  "dependencies": {
+    "ganymede": "^2.0.0"
+  },
+  "repository": "charlespeters/ganymede"
+}
