@@ -1,19 +1,14 @@
+const hexRGB = require("hex-rgb");
 const {
   ansiGroups: { normal, bright }
 } = require("../ganymede");
-const hexRgb = require("hex-rgb");
 
 const def = hex => {
   let color = {};
 
-  const toSrgb = color => {
-    return color / 255;
-  };
+  const colors = hexRGB(hex).map(color => color / 255);
 
-  const colors = hexRgb(hex).map(toSrgb);
-  // const colors = hexRgb(hex)
-
-  color = {
+  let color = {
     red: colors[0],
     green: colors[1],
     blue: colors[2]

@@ -1,8 +1,6 @@
 const Ganymede = require("Ganymede");
 const { uiGroups, ansiGroups } = Ganymede;
 
-// rgba(9, 55, 80, 1) = ui.background
-
 const AlphaBkg = "rgba(9, 55, 80, 0.925)";
 
 exports.onWindow = browserWindow => browserWindow.setVibrancy("dark");

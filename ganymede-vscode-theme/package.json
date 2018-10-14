@@ -5,8 +5,8 @@
   "description": "Ganymede port for VSCode",
   "version": "2.0.6",
   "scripts": {
-    "build": "tsc index.ts",
-    "start": "node index.js",
+    "build": "tsc ganymede.ts",
+    "start": "node ganymede.js",
     "publish": "vscode:publish",
     "vscode:prepublish": "npm run build"
   },
