@@ -4,12 +4,9 @@
   "scripts": {
     "build": "node index.js >> ../Ganymede.itermcolors"
   },
-  "devDependencies": {
-    "onchange": "3.2.1"
-  },
   "dependencies": {
     "ganymede": "^2.0.0",
-    "hex-rgb": "1.0.0"
+    "hex-rgb": "3.0.0"
   },
   "main": "ganymede.itermcolors",
   "description": "Ganymede color scheme plugin for iTerm",
