@@ -12,6 +12,7 @@
   "workspaces": [
     "ganymede",
     "ganymede-vscode-theme",
+    "next",
     "hyperganymede",
     "iterm",
     "vim"
