@@ -1,37 +1,37 @@
-import { uiGroups, ansiGroups } from 'ganymede'
+const Ganymede = require("Ganymede");
+const { uiGroups, ansiGroups } = Ganymede;
 
-// rgba(9, 55, 80, 1) = ui.background
+const AlphaBkg = "rgba(9, 55, 80, 0.925)";
 
-const AlphaBkg = 'rgba(9, 55, 80, 0.925)'
-
-exports.onWindow = browserWindow => browserWindow.setVibrancy('dark')
-exports.decorateConfig = (config) => Object.assign({}, config, {
-  cursorColor: uiGroups.userCurrentState,
-  foregroundColor: uiGroups.foreground,
-  backgroundColor: AlphaBkg,
-  colors: {
-    black: ansiGroups.normal.black,
-    red: ansiGroups.normal.red,
-    green: ansiGroups.normal.green,
-    yellow: ansiGroups.normal.yellow,
-    blue: ansiGroups.normal.blue,
-    magenta: ansiGroups.normal.magenta,
-    cyan: ansiGroups.normal.cyan,
-    white: ansiGroups.normal.white,
-    lightBlack: ansiGroups.bright.black,
-    lightRed: ansiGroups.bright.red,
-    lightGreen: ansiGroups.bright.green,
-    lightYellow: ansiGroups.bright.yellow,
-    lightBlue: ansiGroups.bright.blue,
-    lightMagenta: ansiGroups.bright.magenta,
-    lightCyan: ansiGroups.bright.cyan,
-    lightWhite: ansiGroups.bright.white
-  },
-  termCSS: `
+exports.onWindow = browserWindow => browserWindow.setVibrancy("dark");
+exports.decorateConfig = config =>
+  Object.assign({}, config, {
+    cursorColor: uiGroups.userCurrentState,
+    foregroundColor: uiGroups.foreground,
+    backgroundColor: AlphaBkg,
+    colors: {
+      black: ansiGroups.normal.black,
+      red: ansiGroups.normal.red,
+      green: ansiGroups.normal.green,
+      yellow: ansiGroups.normal.yellow,
+      blue: ansiGroups.normal.blue,
+      magenta: ansiGroups.normal.magenta,
+      cyan: ansiGroups.normal.cyan,
+      white: ansiGroups.normal.white,
+      lightBlack: ansiGroups.bright.black,
+      lightRed: ansiGroups.bright.red,
+      lightGreen: ansiGroups.bright.green,
+      lightYellow: ansiGroups.bright.yellow,
+      lightBlue: ansiGroups.bright.blue,
+      lightMagenta: ansiGroups.bright.magenta,
+      lightCyan: ansiGroups.bright.cyan,
+      lightWhite: ansiGroups.bright.white
+    },
+    termCSS: `
     ${config.termCSS},
     x-screen a { color: ${ansiGroups.bright.magenta}; }
   `,
-  css: `
+    css: `
     ${config.css},
     .tab_first {
       margin-left: 0 !important;
@@ -85,4 +85,4 @@ exports.decorateConfig = (config) => Object.assign({}, config, {
       margin: 0 !important;
     }
   `
-})
+  });

@@ -12,17 +12,19 @@
     },
     {
       "title": "iTerm",
-      "description": "for iTerm",
+      "description": "Colors for iTerm",
       "image": "/static/images/iterm.svg"
     },
     {
       "title": "Vim",
       "description": "NeoVim colorscheme",
       "image": "/static/images/vim.svg"
-    }
-
-  ],
-  "helpers": [
+    },
+    {
+      "title": "VS Code",
+      "description": "Theme for VS Code",
+      "image": "/static/images/vscode.svg"
+    },
     {
       "title": "Slack",
       "description": "Sidebar theme",

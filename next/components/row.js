@@ -1,7 +1,7 @@
-const Block = ({ title, image, description, link, children }) => (
-  <li className='Item'>
+const OutletBlock = ({ title, image, description, link, children }) => (
+  <li>
     <div>
-      {image && <img src={image} />}
+      {image && <img src={image} alt={`Logo mark for ${title}`} />}
       <h4>{title}</h4>
     </div>
     <p>{description}</p>
@@ -10,61 +10,59 @@ const Block = ({ title, image, description, link, children }) => (
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
       }
 
       h4 {
-        font-weight: 500;
-        font-size: 1.125rem;
+        font-weight: 400;
+        font-size: 18px;
         line-height: 1.1;
       }
 
       p {
-        font-family: 'Roboto Mono';
         font-weight: 300;
-        font-size: .875rem;
+        font-size: 14px;
       }
 
-      .Item {
-        font-family: 'Roboto Mono';
+      li {
         display: block;
-        padding: 1rem;
-        max-width: 15rem;
+        border-radius: 4px;
+        border: 1px solid;
+        padding: 16px;
+        max-width: 320px;
         width: 100%;
+        margin-bottom: 16px;
       }
 
       img {
         display: block;
-        margin: 0 1.25rem 0 0;
+        margin: 0 20px 0 0;
         width: auto;
-        max-height: 2.5rem;
+        max-height: 40px;
       }
     `}</style>
   </li>
-)
-
+);
 
 export default ({ title, data }) => (
   <div>
     <h3>{title}</h3>
-    <ul className='Row'>
-      {
-        data.map((d, i) => <Block {...d} key={i} />)
-      }
+    <ul>
+      {data.map((d, i) => (
+        <OutletBlock {...d} key={i} />
+      ))}
     </ul>
     <style jsx>{`
       h3 {
-        font-weight: 300;
+        font-weight: 700;
         text-align: center;
-        letter-spacing: 2px;
-        font-style: italic;
-        margin-bottom: 1rem;
+        margin-bottom: 32px;
       }
 
-      .Row {
+      ul {
         padding: 0;
-        margin: 0 auto 2rem;
-        max-width: 68rem;
+        margin: 0 auto 32px;
+        max-width: 998px;
         list-style: none;
         flex-wrap: wrap;
         display: flex;
@@ -72,4 +70,4 @@ export default ({ title, data }) => (
       }
     `}</style>
   </div>
-)
+);

@@ -2,14 +2,13 @@
   "name": "iterm",
   "version": "2.0.4",
   "scripts": {
+    "prebuild": "rimraf ../Ganymede.itermcolors",
     "build": "node index.js >> ../Ganymede.itermcolors"
-  },
-  "devDependencies": {
-    "onchange": "3.2.1"
   },
   "dependencies": {
     "ganymede": "^2.0.0",
-    "hex-rgb": "1.0.0"
+    "hex-rgb": "3.0.0",
+    "rimraf": "^2.6.2"
   },
   "main": "ganymede.itermcolors",
   "description": "Ganymede color scheme plugin for iTerm",

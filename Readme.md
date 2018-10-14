@@ -1,4 +1,4 @@
-![Color Palette for Ganymede](./assets/ganymede-palette.png)
+![Color Palette for Ganymede](./assets/ganymede-colors.svg)
 
 # Ganymede
 

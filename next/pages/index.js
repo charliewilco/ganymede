@@ -1,48 +1,46 @@
-import { createElement, Component } from 'react'
-import Link from 'next/link'
-import Hex from '../components/hex'
-import Title from '../components/title'
-import Head from '../components/head'
-import Row from '../components/row'
-import Gnym from 'ganymede'
-import { outlets, helpers } from '../outlets.json'
-import { style, rehydrate } from 'glamor'
+import Link from "next/link";
+import Hex from "../components/hex";
+import Title from "../components/title";
+import Head from "../components/head";
+import Row from "../components/row";
+import Ganymede from "ganymede";
+import { outlets } from "../outlets.json";
 
 const App = ({ colors, grays }) => (
   <div>
-    <Head title="Home" />
-    <Hex children={colors} />
-    <div className='Hero'>
-      <Title />
-      <Row title='Editors' data={outlets} />
-      <Row title='Misc.' data={helpers} />
-    </div>
+    <Head title="Ganymede" />
+    <main>
+      <Hex children={colors} />
+      <article>
+        <Title />
+        <Row title="Editors" data={outlets} />
+      </article>
+    </main>
     <style jsx>{`
-        :global(*) {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
+      :global(body) {
+        height: 100%;
+        margin: 0;
+        background: ${Ganymede.grays.gray0};
+        color: ${Ganymede.grays.gray6};
+      }
 
-        :global(html) {
-          font-family: 'Roboto Mono'
-        }
+      main {
+        height: 100%;
+        font-family: "SF Mono";
+        display: flex;
+        justify-content: space-between;
+      }
 
-        :global(body) {
-          height: 100%;
-          margin: 0;
-          background: ${Gnym.grays.gray0};
-          color: ${Gnym.grays.gray6};
-        }
+      article {
+        width: 100%;
+        padding-left: 36px;
+      }
     `}</style>
   </div>
-)
+);
 
-export default class Ganyxt extends Component {
-
-
-
-  render () {
-    return <App />
+export default class Ganyxt extends React.Component {
+  render() {
+    return <App />;
   }
 }
