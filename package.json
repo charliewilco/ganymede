@@ -3,14 +3,24 @@
   "name": "ganymede-atom-syntax",
   "theme": "syntax",
   "version": "2.0.2",
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "workspaces": [
-    "code-theme",
-    "core",
+    "ganymede",
+    "ganymede-vscode-theme",
     "hyperganymede",
     "iterm",
-    "vim-source"
-  ]
+    "vim"
+  ],
+  "prettier": {
+    "printWidth": 95,
+    "useTabs": false,
+    "tabWidth": 2,
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true
+  }
 }

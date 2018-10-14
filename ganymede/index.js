@@ -1,40 +1,40 @@
 const Ganymede = {
   colors: {
-    cyan: '#00B7ED',
-    blue: '#00B7ED',
-    yellow: '#FFBA00',
-    green: '#F1D677',
-    purple: '#F25A55',
-    red: '#F25A55',
-    orange: '#F25A55',
-    pink: '#F5837F'
+    cyan: "#00B7ED",
+    blue: "#00B7ED",
+    yellow: "#FFBA00",
+    green: "#F1D677",
+    purple: "#F25A55",
+    red: "#F25A55",
+    orange: "#F25A55",
+    pink: "#F5837F"
   },
-
   grays: {
-    gray0: '#022538',
-    gray1: '#093750',
-    gray2: '#055682',
-    gray3: '#1C7DB1',
-    gray4: '#A2D9F5',
-    gray5: '#DCEBF5',
-    gray6: '#E6EEF3'
+    gray0: "#022538",
+    gray1: "#093750",
+    gray2: "#055682",
+    gray3: "#1C7DB1",
+    gray4: "#A2D9F5",
+    gray5: "#DCEBF5",
+    gray6: "#E6EEF3"
   }
-}
+};
 
-const colorValues = Ganymede
+const colorValues = Ganymede;
 
-export default colorValues
+const uiGroups = Object.assign(
+  {},
+  {
+    userActionNeeded: colorValues.colors.red,
+    userCurrentState: colorValues.colors.cyan,
+    backgroundShade: colorValues.grays.gray0,
+    background: colorValues.grays.gray1,
+    foreground: colorValues.grays.gray5
+  },
+  colorValues.grays
+);
 
-export const uiGroups = {
-  userActionNeeded: colorValues.colors.red,
-  userCurrentState: colorValues.colors.cyan,
-  backgroundShade: colorValues.grays.gray0,
-  background: colorValues.grays.gray1,
-  foreground: colorValues.grays.gray5,
-  ...colorValues.grays
-}
-
-export const syntaxGroups = {
+const syntaxGroups = {
   constant: colorValues.colors.cyan,
   identifier: colorValues.colors.blue,
   statement: colorValues.colors.yellow,
@@ -43,16 +43,16 @@ export const syntaxGroups = {
   emphasis: colorValues.colors.pink,
   special: colorValues.colors.orange,
   trivial: colorValues.grays.gray4
-}
+};
 
-export const versionControlGroups = {
+const versionControlGroups = {
   added: colorValues.colors.green,
   modified: colorValues.colors.orange,
   removed: colorValues.colors.red,
   renamed: colorValues.colors.blue
-}
+};
 
-export const ansiGroups = {
+const ansiGroups = {
   normal: {
     black: uiGroups.background,
     red: colorValues.colors.red,
@@ -73,4 +73,11 @@ export const ansiGroups = {
     cyan: colorValues.colors.cyan,
     white: colorValues.grays.gray6
   }
-}
+};
+
+module.exports = Object.assign({}, colorValues, {
+  ansiGroups,
+  versionControlGroups,
+  uiGroups,
+  syntaxGroups
+});

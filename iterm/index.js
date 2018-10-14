@@ -1,20 +1,23 @@
-const { ansiGroups } = require('../core')
-const { normal, bright } = ansiGroups
-const hexRgb = require('hex-rgb')
+const {
+  ansiGroups: { normal, bright }
+} = require("../ganymede");
+const hexRgb = require("hex-rgb");
 
-const def = (hex) => {
-  let color = {}
+const def = hex => {
+  let color = {};
 
-  const toSrgb = (color) => { return (color / 255) }
+  const toSrgb = color => {
+    return color / 255;
+  };
 
-  const colors = hexRgb(hex).map(toSrgb)
+  const colors = hexRgb(hex).map(toSrgb);
   // const colors = hexRgb(hex)
 
   color = {
     red: colors[0],
     green: colors[1],
     blue: colors[2]
-  }
+  };
 
   return `
     <dict>
@@ -27,8 +30,8 @@ const def = (hex) => {
       <key>Red Component</key>
       <real>${color.red}</real>
     </dict>
-    `
-}
+    `;
+};
 
 const iterm = `
   <?xml version="1.0" encoding="UTF-8"?>
@@ -97,6 +100,6 @@ const iterm = `
           <real>0.2656099796295166</real>
         </dict>
       </dict>
-    </plist>`
+    </plist>`;
 
-process.stdout.write(iterm)
+process.stdout.write(iterm);

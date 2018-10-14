@@ -2,8 +2,7 @@
   "name": "iterm",
   "version": "2.0.4",
   "scripts": {
-    "start": "onchange 'index.js' -- npm run build",
-    "build": "node index.js >> Ganymede.itermcolors"
+    "build": "node index.js >> ../Ganymede.itermcolors"
   },
   "devDependencies": {
     "onchange": "3.2.1"
