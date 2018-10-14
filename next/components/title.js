@@ -1,26 +1,27 @@
 export default () => (
   <div>
-    <img src='/static/images/ganymede-logo.svg' />
+    <img alt="Moons in orbit" src="/static/images/ganymede-logo.svg" />
     <h1>Ganymede</h1>
     <style jsx>{`
       div {
-        max-width: 12rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        margin: 0 auto 5rem;
+        max-width: 100%;
+        padding: 80px 16px;
+        text-align: center;
+        margin: 0 auto;
       }
 
       h1 {
         font-weight: 300;
-        font-style: italic;
+        font-size: 36px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+          sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       }
 
       img {
-        max-width: 7.5rem;
-        margin-right: 1.25rem;
+        display: block;
+        max-width: 120px;
+        margin: 0 auto 20px;
       }
     `}</style>
   </div>
-)
+);

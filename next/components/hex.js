@@ -1,29 +1,34 @@
-import Gnym from 'ganymede'
-import Color from './color'
+import Ganymede from "ganymede";
+import ColorSwatch from "./color-swatch";
 
-export default () => (
-  <div>
-    {getColors(Gnym.grays)}
-    {getColors(Gnym.colors)}
-    <style jsx>{`
-      div {
-         display: flex;
-         flex-wrap: wrap;
-         text-align: center;
-         justify-content: space-around;
-         margin-bottom: 2rem;
-      }
-    `}</style>
-  </div>
-)
+export default class extends React.Component {
+  static defaultProps = {
+    grays: Ganymede.grays,
+    colors: Ganymede.colors
+  };
 
-
-const getColors = (colors) => {
-  let contents = []
-
-  for(let x in colors) {
-    contents.push(<Color color={colors[x]} key={x} />)
+  getColors(colors) {
+    return Object.keys(colors).map(color => <ColorSwatch color={colors[color]} key={color} />);
   }
 
-  return contents
+  render() {
+    const { grays, colors } = this.props;
+    return (
+      <div>
+        {this.getColors(grays)}
+        {this.getColors(colors)}
+        <style jsx>{`
+          div {
+            min-height: 100%;
+            z-index: 4;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+          }
+        `}</style>
+      </div>
+    );
+  }
 }
