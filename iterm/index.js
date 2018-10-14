@@ -4,26 +4,18 @@ const {
 } = require("../ganymede");
 
 const def = hex => {
-  let color = {};
-
-  const colors = hexRGB(hex).map(color => color / 255);
-
-  let color = {
-    red: colors[0],
-    green: colors[1],
-    blue: colors[2]
-  };
+  let color = hexRGB(hex);
 
   return `
     <dict>
       <key>Color Space</key>
       <string>sRGB</string>
       <key>Blue Component</key>
-      <real>${color.blue}</real>
+      <real>${color.blue / 255}</real>
       <key>Green Component</key>
-      <real>${color.green}</real>
+      <real>${color.green / 255}</real>
       <key>Red Component</key>
-      <real>${color.red}</real>
+      <real>${color.red / 255}</real>
     </dict>
     `;
 };
