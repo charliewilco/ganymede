@@ -1,37 +1,27 @@
 {
-  "name": "ganymede",
-  "version": "1.1.0",
-  "description": "A color scheme for Hyper/Hyperterm, Atom & Neovim",
-  "main": "dist/ganymede.js",
-  "scripts": {
-    "build": "babel src -d dist",
-    "prepublish": "npm run build",
-    "start": "onchange 'index.js' -- npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charlespeters/ganymede.git"
-  },
-  "keywords": [],
-  "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/charlespeters/ganymede/issues"
-  },
-  "homepage": "https://github.com/charlespeters/ganymede#readme",
+  "private": true,
+  "name": "ganymede-atom-syntax",
+  "theme": "syntax",
+  "version": "2.0.2",
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-plugin-transform-object-rest-spread": "^6.16.0",
-    "babel-preset-latest": "^6.16.0",
-    "onchange": "^3.0.2"
+    "prettier": "^1.14.3"
   },
-  "babel": {
-    "presets": [
-      "latest"
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "workspaces": [
+    "ganymede",
+    "ganymede-vscode-theme",
+    "next",
+    "hyperganymede",
+    "iterm",
+    "vim"
+  ],
+  "prettier": {
+    "printWidth": 95,
+    "useTabs": false,
+    "tabWidth": 2,
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true
   }
 }

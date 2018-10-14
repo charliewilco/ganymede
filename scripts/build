@@ -1,0 +1,24 @@
+#!/bin/bash
+set -euo pipefail
+
+yarn
+
+echo "---- BUILDING GANYMEDE FILES ----\n"
+
+yarn workspace ganymede test
+
+echo "---- BUILDING VIM ----\n"
+
+yarn workspace vim build
+
+echo "---- BUILDING ITERM ----\n"
+
+yarn workspace iterm build
+
+echo "---- BUILDING VSCODE ----\n"
+
+yarn workspace ganymede-vscode-theme build
+
+echo "---- BUILDING SITE ----\n"
+
+yarn workspace next build

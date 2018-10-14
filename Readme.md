@@ -1,4 +1,4 @@
-![Color Palette for Ganymede](assets/ganymede-palette.png)
+![Color Palette for Ganymede](./assets/ganymede-palette.png)
 
 # Ganymede
 
@@ -8,10 +8,13 @@
 
 A color scheme for Hyper/Hyperterm, Vim/NeoVim & Atom (maybe, eventually, probably...) inspired by the icy coldness of the moons of Jupiter contrasted against all the bright vibrant colors that my personality comprises.
 
+---
+
+[![Build Status](https://travis-ci.org/charliewilco/ganymede.svg?branch=master)](https://travis-ci.org/charliewilco/ganymede)
 
 ## Usage
 
-```
+```shell
 npm i -S ganymede
 ```
 
@@ -37,7 +40,6 @@ let g:airline_theme='ganymede'
   <br />
   <a href='https://github.com/charlespeters/hyperganymede'>Hyper</a>
 </h3>
-
 
 Add `'hyperganymede'` under plugins in your configuration file (preferably toward the end of the list). An example:
 
